@@ -3,11 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- css -->
     <link rel="stylesheet" href="css/style.css">
     <title>trevel agen</title>
 </head>
 <body>
-    
+
+    <header>
+        <div class="nav-section">
+            <h1>Vasillia Travel</h1>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#ourPakage">Our Pakage</a>
+            <a href="#review">Review</a>
+            <a href="#booking">Booking</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="jumbotron" id="home">
+            <div class="jt-description">
+                <h2>Live Your <br> <span>Advanture</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit repudiandae consequatur aliquam sunt voluptate nesciunt cupiditate porro, quasi beatae et nisi accusantium. Facere quis doloremque blanditiis, sunt quasi consequatur!</p>
+            </div>
+            <div class="jt-slideshow" id="slideshow">
+                <div class="jt-image-container" id="imageContainer">
+                    <img src="asset/bali.jpg" alt="bali" class="jt-image">
+                    <img src="asset/jogja.jpg" alt="bali" class="jt-image">
+                    <img src="asset/labuan bajo.jpg" alt="bali" class="jt-image">
+                    <img src="asset/raja ampat.jpg" alt="bali" class="jt-image">
+                    <img src="asset/bali.jpg" alt="bali" class="jt-image">
+                </div>
+            </div>
+        </div>
+
+        <section class="destination" id="ourPakage">
+            <h2>FIND <span>POPULAR</span> <br> DESTINATION</h2>
+            <div class="destination-container">
+
+                <div class="destination-card">
+                    <img src="asset/jogja.jpg" alt="#">
+                    <div class="dns-description">
+                        <h3>Yogyakarta</h3>
+                        <p>lorem ipsum dolor sit amet</p>
+                        <button>Booking</button>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="asset/bali.jpg" alt="#">
+                    <div class="dns-description">
+                        <h3>Bali</h3>
+                        <p>lorem ipsum dolor sit amet</p>
+                        <button>Booking</button>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="asset/labuan bajo.jpg" alt="#">
+                    <div class="dns-description">
+                        <h3>Labuan Bajo</h3>
+                        <p>lorem ipsum dolor sit amet</p>
+                        <button>Booking</button>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="asset/raja ampat.jpg" alt="#">
+                    <div class="dns-description">
+                        <h3>Raja Ampat</h3>
+                        <p>lorem ipsum dolor sit amet</p>
+                        <button>Booking</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="review" id="review">
+
+                <div class="review-conten review-conten-image">
+                    <img src="asset/advanture.jpg" alt="#">
+                </div>
+
+                <div class="review-conten">
+                    <h2>OUR <span>STORIES</span> WITH <br>ADVANTURE</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid aperiam repudiandae esse labore vero voluptatibus nesciunt placeat dolores voluptatum autem? Praesentium quia, magni alias accusamus necessitatibus iusto voluptatum consequuntur fuga!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis architecto quibusdam recusandae neque placeat,</p>
+                    
+                    <div class="review-card-container">
+                        <div class="review-card">
+                            <h2>12K+</h2>
+                            <p>Succes <br>Journey</p>
+                        </div>
+                        <div class="review-card">
+                            <h2>16+</h2>
+                            <p>Awards<br>Winning</p>
+                        </div>
+                        <div class="review-card">
+                            <h2>20+</h2>
+                            <p>Year Of<br>Experience</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="booking" id="booking">
+
+                <div class="booking-title">
+                    <h2>START YOUR NEW <span>ADVENTURE</span><br> AROUND THE WORLD</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate rerum minima minus sapiente officiis dignissimos </p>
+                </div>
+
+                <div class="booking-conten">
+
+                    <div class="booking-section">
+
+                        <h2>Customer Information</h2>
+                        <form action="customerInformation">
+                            <label for="fullName">Full Name</label><br>
+                            <input type="text" id="name" autocomplete="none"><br>
+                            <label for="email">Email Address</label><br>
+                            <input type="email" id="email" autocomplete="none"><br>
+                            <label for="phone">Phone Number</label><br>
+                            <input type="text" inputmode="numeric" id="phone" autocomplete="none">
+                        </form>
+
+                        <h2>Destination Detail</h2>
+                        <form action="destination">
+                            <label for="destination">Destination</label><br>
+                            <select name="destination" id="destination">
+                                <option value="Yogyakarta">Yogyakarta</option>
+                                <option value="Bali">Bali</option>
+                                <option value="Labuan Bajo">Labuan Bajo</option>
+                                <option value="Raja Ampat">Raja Ampat</option>
+                            </select><br>
+                            <label for="hotel">Hotel/Resort</label><br>
+                            <select name="destination" id="hotel">
+                                <option value="Hotel A">Hotel A</option>
+                                <option value="Hotel B">Hotel B</option>
+                                <option value="Hotel C">Hotel C</option>
+                                <option value="Hotel D">Hotel D</option>
+                            </select>
+                        </form>
+                        
+                    </div>
+
+                    <div class="booking-section">
+
+                        <h2>Travel Detail</h2>
+                        <div class="date-travel">
+                            
+                            <div class="date-travel-section">
+                                <form action="#">
+                                    <label for="#">Departure Date</label><br>
+                                    <input type="date" id="departureDate"><br>
+                                    <label for="#">Departure Time</label><br>
+                                    <input type="time" id="departureTime">
+                                </form>
+                            </div>
+                            <div class="date-travel-section">
+                                <form action="dateTravel">
+                                    <label for="#">Return Date</label><br>
+                                    <input type="date" id="returnDate"><br>
+                                    <label for="#">Return Time</label><br>
+                                    <input type="time" id="returnTime">
+                                </form>
+                            </div>
+                        </div>
+                        
+
+                        <h2>Note</h2>
+                        <form action="Note">
+                            <textarea id="note"></textarea>
+                        </form>
+                    </div>
+                    
+                </div>
+                <button id="bookingButton">Booking Now</button>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy;2025 Copyright by Vasillia. All Rights Reserved. </p>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>

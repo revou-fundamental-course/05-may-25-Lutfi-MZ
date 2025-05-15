@@ -1,0 +1,594 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+
+}
+
+html{
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+/* HEADER  */
+
+header{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99;
+    text-shadow: 2px 2px 5px white;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 2px 5px gray;
+}
+
+header .nav-section{
+    margin-left: 30px;
+    margin-right: 30px;
+    align-items: center;
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+header nav{
+    font-size: 1.5rem;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header nav a{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+header nav a:hover{
+    color: white;
+    text-shadow: 0px 1px 2px black;
+
+}
+/* HEADER END */
+
+/* MAIN */
+
+main{
+    width: 100%;
+}
+
+    /* jumbotron */
+    main .jumbotron{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        box-shadow: 2px 2px 10px black;
+
+    }
+
+    main .jumbotron .jt-description{
+        width: 50vw;
+        height: 65%;
+        text-align: center;
+        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: bold;
+        color: white;
+        text-shadow: 2px 2px 5px black;
+        position: absolute;
+    }
+
+    main .jumbotron .jt-description h2{
+        line-height: 3.5rem;
+    }
+
+    main .jumbotron .jt-description p{
+        font-size: 1rem;
+        margin-top: 1.5rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        text-align: center;
+    }
+
+    main .jumbotron .jt-description span{
+        color: orange;
+    }
+
+    main .jumbotron .jt-slideshow{
+        width: 500vw;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    main .jumbotron .jt-slideshow .jt-image-container{
+        width: 500vw;
+        height: 100%;
+        flex-direction: row;
+        display: flex;
+    }
+
+    main .jumbotron .jt-slideshow .jt-image-container .jt-image{
+        width: 100vw;
+        height: 100%;
+    }
+
+    /* jumbo tron end */
+
+    /* section */
+    main section{
+        width: 100%;
+        height: 600px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 70px;
+    }
+
+    /* destination */
+    main .destination h2{
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        margin-left: 40px;
+        color: white;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    main .destination h2 span{
+        color: orange;
+    }
+
+    main .destination-container{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    main .destination-container .destination-card{
+        height: 80%;
+        width: 350px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 7px gray;
+    }
+
+    main .destination-container .destination-card .dns-description button{
+        background-color: orange;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 1px 1px 7px gray;
+    }
+
+    main .destination-container .destination-card img{
+        width: 100%;
+        height: 65%;
+        border-radius: 15px 15px 0 0 ;
+    }
+
+    main .destination-container .destination-card .dns-description{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 30%;
+        
+    }
+
+    main .destination-container .destination-card .dns-description button{
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+
+    /* review */
+
+    main .review {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .review .review-conten{
+        width: 50%;
+        height: 100%;    
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        flex-direction: column;
+        gap: 20px;  
+    }
+
+    main .review .review-conten img{
+        width: 70%;
+        height: 90%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px gray;
+    }
+
+    main .review .review-conten h2{
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        color: white;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    main .review .review-conten h2 span{
+        color: orange;
+    }
+
+    main .review .review-conten .review-card-container{
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    main .review .review-conten .review-card-container .review-card{
+        width: 160px;
+        height: 190px;
+        border-radius: 15px;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        box-shadow: 5px 5px 10px gray;
+    }
+
+    main .review .review-conten .review-card-container .review-card p{
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+
+    main .review .review-conten .review-card-container .review-card h2{
+        color: orange;
+    }
+
+    /* booking */
+
+    main .booking {
+        height: auto;
+    }
+    
+    main .booking .booking-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 20%;
+        margin-bottom: 20px;
+    }
+
+    main .booking .booking-title h2{
+        text-align: center;
+         font-size: 3.5rem;
+        line-height: 3.5rem;
+        color: white;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    main .booking .booking-title h2 span{
+        color: orange;
+    }
+
+    main .booking .booking-conten{
+        width: 100%;
+        height: 75%;
+        display: flex;
+    }
+
+    main .booking .booking-conten .booking-section{
+        width: 50%;
+        height: 100%;
+        padding-left: 50px;
+       
+    }
+
+    main .booking .booking-conten .booking-section h2{
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: orange;
+    }
+    main .booking .booking-conten .booking-section form {
+        margin-bottom: 20px;
+        
+    }
+    main .booking .booking-conten .booking-section form label{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    main .booking .booking-conten .booking-section form input{
+        width: 50%;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+    main .booking .booking-conten .booking-section select{
+        font-size: 1.5rem;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 50%;
+        border-radius: 10px;
+    }
+
+    main .booking .booking-conten .booking-section .date-travel{
+        width: 100%;
+        display: flex;
+    }
+
+    main .booking .booking-conten .booking-section .date-travel .date-travel-section{
+        width: 50%;
+    }
+    main .booking .booking-conten .booking-section .date-travel .date-travel-section input{
+        width: 70%;
+    }
+
+    main .booking .booking-conten .booking-section form textarea{
+        width: 85%;
+        height: 200px;
+        resize: none;
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+
+    main .booking button{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        font-size: 2rem;
+        font-weight: bolder;
+        border: none;
+        border-radius: 15px;
+        color: white;
+        background-color: orange;
+        margin-bottom: 20px;
+    }
+    
+
+/* MAIN END */
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+}
+
+/* FOOTER END */
+
+/* button */
+button:hover{
+    scale: 0.9;
+    transition: 0.5s;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (max-width: 1200px) {
+    /* header */
+    header{
+        justify-content: space-between;
+    }
+
+    header .nav-section{
+    position: static;
+  }
+
+  /* destination */
+  main .destination-container .destination-card{
+    height: 75%;
+    width: 250px;
+  }
+
+  /* booking */
+  main .booking .booking-conten .booking-section form textarea{
+    margin-left: 5px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+     main .destination-container .destination-card{
+    height: 70%;
+    width: 200px;
+  }
+  main .review .review-conten .review-card-container .review-card{
+        width: 120px;
+        height: 150px;
+        
+    }
+
+    main .review .review-conten .review-card-container .review-card h2{
+        font-size: 2.5rem;
+    }
+    main .review .review-conten .review-card-container .review-card p{
+        font-size: 1rem;
+    }
+}
+
+/* PHONE VIEW */
+@media screen and (max-width: 768px) {
+    *{
+        font-size: 16px;
+    }
+
+/* HEADER */
+
+  header nav{
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: space-around;
+    width: 300px;
+    margin-right: 20px;
+  }
+
+  header .nav-section{
+    position: static;
+  }
+
+  header .nav-section h1{
+    font-size: 1.3rem;
+  }
+
+/* HEADER END */
+/* MAIN */
+
+/* jumbotron */
+main .jumbotron .jt-description{
+    width: 70%;
+    height: 300px;
+}
+
+main .jumbotron .jt-description h2{
+    font-size: 2rem;
+    line-height: 1.8rem;
+}
+
+main .jumbotron .jt-description h2 span{
+    font-size: 2rem;
+}
+
+main .jumbotron .jt-description p{
+    font-size: 0.7rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/* section */
+
+main section{
+    height: 700px;
+    justify-content: space-around;
+}
+
+/* destination */
+
+main .destination h2{
+    font-size: 2rem;
+    line-height: 1.8rem;
+
+}
+
+main .destination h2 span{
+    font-size: 2rem;
+}
+
+main .destination-container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas:
+        "card card"
+        "card card";
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+}
+
+main .destination-container .destination-card{
+    width: 200px;
+    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ main .destination-container .destination-card .dns-description h3{
+    font-size: 1rem;
+ }
+
+ main .destination-container .destination-card .dns-description p{
+    font-size: 0.7rem;
+ }
+/* review */
+main .review{
+    flex-direction: column-reverse;
+}
+main .review .review-conten{
+    width: 100%;
+    height: 60%;
+}
+main .review .review-conten-image{
+    height: 40%;
+}
+main .review .review-conten img{
+    height: 95%;
+    width: 75%;
+}
+main .review .review-conten h2{
+    font-size: 2rem;
+    line-height: 1.8rem;
+}
+main .review .review-conten h2 span{
+    font-size: 2rem;
+}
+
+main .review .review-conten p{
+    font-size: 0.8rem;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+main .review .review-conten .review-card-container{
+    margin-top: 0;
+}
+
+main .review .review-conten .review-card-container .review-card{
+    width: 120px;
+    height: 150px;
+}
+
+main .review .review-conten .review-card-container .review-card p{
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* booking */
+ main .booking .booking-title h2{
+     font-size: 2rem;
+    line-height: 1.8rem;
+    }
+
+ main .booking .booking-title h2 span{
+        font-size: 2rem;
+ }
+main .booking .booking-title p{
+    font-size: 0.8rem;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+main .booking .booking-conten{
+    flex-direction: column;
+}
+main .booking .booking-conten .booking-section{
+    width: 90vw;
+}
+
+main .booking .booking-conten .booking-section h2{
+    font-size: 2rem;
+}
+main .booking .booking-conten .booking-section form input{
+    width: 80%;
+}
+
+main .booking .booking-conten .booking-section form select{
+    width: 80%;
+}
+/* MAIN END */
+}
